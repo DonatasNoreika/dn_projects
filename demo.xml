@@ -1,0 +1,26 @@
+<odoo>
+        <record model="dn_projects.project" id="project1">
+            <field name="name">Project One</field>
+            <field name="description">Project One's description
+            </field>
+            <field name="start_date">2020-01-01</field>
+            <field name="end_date">2020-02-01</field>
+        </record>
+
+        <record model="dn_projects.project" id="project2">
+            <field name="name">Project Two</field>
+            <field name="description">Project Two's description
+            </field>
+            <field name="start_date">2021-01-15</field>
+            <field name="end_date">2021-02-03</field>
+        </record>
+
+        <record model="dn_projects.project" id="project3">
+            <field name="name">Project Three</field>
+            <field name="description">Project Three's description
+            </field>
+            <field name="start_date">2021-04-02</field>
+            <field name="end_date">2021-05-20</field>
+        </record>
+
+</odoo>
