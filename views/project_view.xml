@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+        <record model="ir.actions.act_window" id="project_list_action">
+            <field name="name">Projects</field>
+            <field name="res_model">dn_projects.project</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first project
+                </p>
+            </field>
+        </record>
+
+        <!-- top level menu: no parent -->
+        <menuitem id="main_dn_projects_menu" name="DN Projects"/>
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <menuitem id="dn_projects_menu" name="Projects"
+                  parent="main_dn_projects_menu"/>
+        <!-- the following menuitem should appear *after*
+             its parent openacademy_menu and *after* its
+             action course_list_action -->
+        <menuitem id="courses_menu" name="Projects" parent="dn_projects_menu"
+                  action="project_list_action"/>
+        <!-- Full id location:
+             action="openacademy.course_list_action"
+             It is not required when it is the same module -->
+
+</odoo>
