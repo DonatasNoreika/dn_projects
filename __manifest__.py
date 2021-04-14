@@ -12,7 +12,7 @@
             - invoices
     """,
 
-    'author': ["Donatas Noreika", "Code Academy"],
+    'author': "Donatas Noreika, Code Academy",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
