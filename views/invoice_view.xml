@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record model="ir.ui.view" id="dn_invoices_form_view">
+            <field name="name">invoice.form</field>
+            <field name="model">dn_projects.invoice</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="total"/>
+                            <field name="project_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- override the automatically generated list view for courses -->
+        <record model="ir.ui.view" id="dn_invoices_tree_view">
+            <field name="name">invoice.tree</field>
+            <field name="model">dn_projects.invoice</field>
+            <field name="arch" type="xml">
+                <tree string="Invoice Tree">
+                    <field name="name"/>
+                    <field name="total"/>
+                    <field name="project_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+        <record model="ir.actions.act_window" id="invoices_list_action">
+            <field name="name">Invoices</field>
+            <field name="res_model">dn_projects.invoice</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first job
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="invoices_menu" name="Invoices" parent="dn_projects_menu"
+                  action="invoices_list_action"/>
+        <!-- Full id location:
+             action="openacademy.course_list_action"
+             It is not required when it is the same module -->
+
+</odoo>

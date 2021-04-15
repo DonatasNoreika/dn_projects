@@ -30,6 +30,7 @@
         # 'templates.xml',
         'views/project_view.xml',
         'views/job_view.xml',
+        'views/invoice_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
