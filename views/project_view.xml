@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
+        <record model="ir.ui.view" id="dn_project_form_view">
+            <field name="name">project.form</field>
+            <field name="model">dn_projects.project</field>
+            <field name="arch" type="xml">
+                <form string="Project Form">
+                    <sheet>
+                        <group name="Main">
+                            <field name="client_id"/>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                        </group>
+                        <notebook>
+                            <page string="Employees">
+                                <group>
+                                    <field name="leader_id"/>
+                                    <field name="employees_ids"/>
+                                </group>
+                            </page>
+                            <page string="Jobs">
+                                <field name="jobs_ids"/>
+                            </page>
+                           <page string="Invoices">
+                                <field name="invoice_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- override the automatically generated list view for courses -->
+        <record model="ir.ui.view" id="dn_project_tree_view">
+            <field name="name">project.tree</field>
+            <field name="model">dn_projects.project</field>
+            <field name="arch" type="xml">
+                <tree string="Project Tree">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="leader_id"/>
+                    <field name="client_id"/>
+                </tree>
+            </field>
+        </record>
+
+
         <!-- window action -->
         <!--
             The following tag is an action definition for a "window action",
