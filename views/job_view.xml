@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record model="ir.ui.view" id="dn_jobs_form_view">
+            <field name="name">job.form</field>
+            <field name="model">dn_projects.job</field>
+            <field name="arch" type="xml">
+                <form string="Job Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="project_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- override the automatically generated list view for courses -->
+        <record model="ir.ui.view" id="dn_jobs_tree_view">
+            <field name="name">job.tree</field>
+            <field name="model">dn_projects.job</field>
+            <field name="arch" type="xml">
+                <tree string="Job Tree">
+                    <field name="name"/>
+                    <field name="project_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+        <record model="ir.actions.act_window" id="jobs_list_action">
+            <field name="name">Jobs</field>
+            <field name="res_model">dn_projects.job</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first job
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="jobs_menu" name="Jobs" parent="dn_projects_menu"
+                  action="jobs_list_action"/>
+        <!-- Full id location:
+             action="openacademy.course_list_action"
+             It is not required when it is the same module -->
+
+</odoo>

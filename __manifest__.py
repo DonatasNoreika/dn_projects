@@ -29,6 +29,7 @@
         # 'security/ir.model.access.csv',
         # 'templates.xml',
         'views/project_view.xml',
+        'views/job_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
