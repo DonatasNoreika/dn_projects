@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <odoo>
 
-<!--        &lt;!&ndash; Add instructor field to existing view &ndash;&gt;-->
-<!--        <record model="ir.ui.view" id="partner_instructor_form_view">-->
-<!--            <field name="name">partner.instructor</field>-->
-<!--            <field name="model">res.partner</field>-->
-<!--            <field name="inherit_id" ref="base.view_partner_form"/>-->
-<!--            <field name="arch" type="xml">-->
-<!--                <notebook position="inside">-->
-<!--                    <page string="Sessions">-->
-<!--                        <group>-->
-<!--                            <field name="instructor"/>-->
-<!--                            <field name="session_ids"/>-->
-<!--                        </group>-->
-<!--                    </page>-->
-<!--                </notebook>-->
-<!--            </field>-->
-<!--        </record>-->
+        <!-- Add instructor field to existing view -->
+        <record model="ir.ui.view" id="dn_partner_form_view">
+            <field name="name">partner.project</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Projects">
+                        <group>
+                            <field name="project_ids"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+
 
         <record model="ir.actions.act_window" id="partners_list_action">
             <field name="name">Partners</field>
