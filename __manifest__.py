@@ -28,6 +28,8 @@
     'data': [
         # 'security/ir.model.access.csv',
         # 'templates.xml',
+        'views/inherited_hr_employee_view.xml',
+        'views/inherited_partner_view.xml',
         'views/project_view.xml',
         'views/job_view.xml',
         'views/invoice_view.xml',
