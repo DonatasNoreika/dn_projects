@@ -10,7 +10,7 @@ class Project(models.Model):
     start_date = fields.Date(string="Start Date")
     end_date = fields.Date(string="End Date")
 
-    leader_id = fields.Many2one('hr.employee', string="Team Leader")
+    leader_id = fields.Many2one('hr.employee', string="Team Leader", domain=[('leader', '=', True)])
     client_id = fields.Many2one('res.partner', string="Client")
 
     jobs_ids = fields.One2many('dn_projects.job', 'project_id', string="Jobs")
