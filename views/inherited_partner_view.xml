@@ -24,6 +24,7 @@
             <field name="res_model">res.partner</field>
             <field name="view_mode">tree,form</field>
         </record>
+
         <menuitem id="dn_configuration_menu" name="Configuration"
                   parent="main_dn_projects_menu"/>
         <menuitem id="dn_partner_action_menu" name="Partners"
