@@ -27,22 +27,30 @@ class Project(models.Model):
             else:
                 record.emp_percent = 100.0 * len(record.employees_ids) / record.max_employees
 
-    @api.onchange('max_employees', 'employees_ids')
-    def _verify_employees_qty(self):
-        if self.max_employees < 0:
-            return {
-                'warning': {
-                    'title': "Incorrect 'max employees' value",
-                    'message': "The number of max employees may not be negative",
-                },
-            }
-        if self.max_employees < len(self.employees_ids):
-            return {
-                'warning': {
-                    'title': "Too many employees",
-                    'message': "Increase max employees or remove excess employees",
-                },
-            }
+    @api.constrains('max_employees', 'employees_ids')
+    def _check_employees_qty(self):
+        for r in self:
+            if r.max_employees < 0:
+                raise exceptions.ValidationError("The number of max employees may not be negative")
+            if r.max_employees < len(r.employees_ids):
+                raise exceptions.ValidationError("Increase max employees or remove excess employees")
+
+    # @api.onchange('max_employees', 'employees_ids')
+    # def _verify_employees_qty(self):
+    #     if self.max_employees < 0:
+    #         return {
+    #             'warning': {
+    #                 'title': "Incorrect 'max employees' value",
+    #                 'message': "The number of max employees may not be negative",
+    #             },
+    #         }
+    #     if self.max_employees < len(self.employees_ids):
+    #         return {
+    #             'warning': {
+    #                 'title': "Too many employees",
+    #                 'message': "Increase max employees or remove excess employees",
+    #             },
+    #         }
 
     @api.constrains('leader_id', 'employees_ids')
     def _check_leader_not_in_employees(self):
