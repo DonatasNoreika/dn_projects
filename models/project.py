@@ -9,6 +9,7 @@ class Project(models.Model):
     description = fields.Text(string="Description")
     start_date = fields.Date(string="Start Date")
     end_date = fields.Date(string="End Date")
+    duration = fields.Integer(string="Duration (days)", compute='_get_duration')
     max_employees = fields.Integer(string="Max Employees")
 
     leader_id = fields.Many2one('hr.employee', string="Team Leader", domain=[('leader', '=', True)])
@@ -18,6 +19,11 @@ class Project(models.Model):
     invoice_ids = fields.One2many('dn_projects.invoice', 'project_id', string="Invoices")
     employees_ids = fields.Many2many('hr.employee', string="Employees")
     emp_percent = fields.Float(string="Employee percent", compute='_get_employee_percent')
+
+    @api.depends('start_date', 'end_date')
+    def _get_duration(self):
+        for record in self:
+            record.duration = (record.end_date - record.start_date).days
 
     @api.depends('max_employees', 'employees_ids')
     def _get_employee_percent(self):

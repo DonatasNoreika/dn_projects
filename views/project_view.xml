@@ -13,6 +13,7 @@
                             <field name="description"/>
                             <field name="start_date"/>
                             <field name="end_date"/>
+                            <field name="duration"/>
                             <field name="max_employees"/>
                             <field name="emp_percent" widget="progressbar"/>
                         </group>
@@ -54,11 +55,12 @@
             <field name="name">project.tree</field>
             <field name="model">dn_projects.project</field>
             <field name="arch" type="xml">
-                <tree string="Project Tree">
+                <tree string="Project Tree" decoration-info="duration&lt;30" decoration-danger="duration&gt;90">
                     <field name="name"/>
                     <field name="description"/>
                     <field name="start_date"/>
                     <field name="end_date"/>
+                    <field name="duration"/>
                     <field name="leader_id"/>
                     <field name="client_id"/>
                     <field name="max_employees"/>
