@@ -19,7 +19,13 @@ class Project(models.Model):
     invoice_ids = fields.One2many('dn_projects.invoice', 'project_id', string="Invoices")
     employees_ids = fields.Many2many('hr.employee', string="Employees")
     emp_percent = fields.Float(string="Employee percent", compute='_get_employee_percent')
+    emp_qty = fields.Integer(string="Employee count", compute='_get_employee_qty', store=True)
     active = fields.Boolean(default=True)
+
+    @api.depends('employees_ids')
+    def _get_employee_qty(self):
+        for record in self:
+            record.emp_qty = len(record.employees_ids)
 
     @api.depends('start_date', 'end_date')
     def _get_duration(self):
