@@ -69,6 +69,17 @@
             </field>
         </record>
 
+        <!-- calendar view -->
+        <record model="ir.ui.view" id="dn_projects_calendar_view">
+            <field name="name">dn_project.calendar</field>
+            <field name="model">dn_projects.project</field>
+            <field name="arch" type="xml">
+                <calendar string="Project Calendar" date_start="start_date" date_stop="end_date" color="leader_id">
+                    <field name="name"/>
+                </calendar>
+            </field>
+        </record>
+
 
         <!-- window action -->
         <!--
@@ -78,7 +89,7 @@
         <record model="ir.actions.act_window" id="project_list_action">
             <field name="name">Projects</field>
             <field name="res_model">dn_projects.project</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">Create the first project
                 </p>
