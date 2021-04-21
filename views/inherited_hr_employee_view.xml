@@ -18,14 +18,14 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="employees_list_action">
+        <record model="ir.actions.act_window" id="dn_employees_list_action">
             <field name="name">Employees</field>
             <field name="res_model">hr.employee</field>
             <field name="view_mode">tree,form</field>
         </record>
         <menuitem id="dn_employees_action_menu" name="Employees"
                   parent="dn_configuration_menu"
-                  action="employees_list_action"/>
+                  action="dn_employees_list_action"/>
 
 
 </odoo>
