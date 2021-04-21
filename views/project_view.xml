@@ -16,6 +16,7 @@
                             <field name="duration"/>
                             <field name="max_employees"/>
                             <field name="emp_percent" widget="progressbar"/>
+                            <field name="active"/>
                         </group>
                         <notebook>
                             <page string="Employees">
@@ -93,6 +94,27 @@
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">Create the first project
                 </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="dn_projects_search_view">
+            <field name="name">dn_projects.search</field>
+            <field name="model">dn_projects.project</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <filter name="innactive" string="Innactive"
+                            domain="[('active', '=', False)]"/>
+                    <group string="Group By">
+                        <filter name="by_leader" string="Team Lead"
+                                context="{'group_by': 'leader_id'}"/>
+                    </group>
+                    <group string="Group By">
+                        <filter name="by_client" string="Client"
+                                context="{'group_by': 'client_id'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 
