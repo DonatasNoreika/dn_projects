@@ -8,8 +8,8 @@
                 <form string="Project Form">
                     <sheet>
                         <group name="Main">
-                            <field name="client_id"/>
                             <field name="name"/>
+                            <field name="client_id"/>
                             <field name="description"/>
                             <field name="start_date"/>
                             <field name="end_date"/>
@@ -136,7 +136,7 @@
         <record model="ir.actions.act_window" id="project_list_action">
             <field name="name">Projects</field>
             <field name="res_model">dn_projects.project</field>
-            <field name="view_mode">kanban,tree,form,calendar,graph,pivot</field>
+            <field name="view_mode">tree,kanban,form,calendar,graph,pivot</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">Create the first project
                 </p>

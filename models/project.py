@@ -10,7 +10,7 @@ class Project(models.Model):
     start_date = fields.Date(string="Start Date")
     end_date = fields.Date(string="End Date")
     duration = fields.Integer(string="Duration (days)", compute='_get_duration')
-    max_employees = fields.Integer(string="Max Employees")
+    max_employees = fields.Integer(string="Max Employees", default=10)
 
     leader_id = fields.Many2one('hr.employee', string="Team Leader", domain=[('leader', '=', True)])
     client_id = fields.Many2one('res.partner', string="Client")
@@ -30,6 +30,9 @@ class Project(models.Model):
     @api.depends('start_date', 'end_date')
     def _get_duration(self):
         for record in self:
+            if not record.end_date:
+                record.duration = 0
+                continue
             record.duration = (record.end_date - record.start_date).days
 
     @api.depends('max_employees', 'employees_ids')
