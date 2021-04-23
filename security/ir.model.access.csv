@@ -1,0 +1,7 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+project_manager,project manager,model_dn_projects_project,group_manager,1,1,1,1
+job_manager,job manager,model_dn_projects_job,group_manager,1,1,1,1
+invoice_manager,invoice manager,model_dn_projects_invoice,group_manager,1,1,1,1
+project_read_all,project all,model_dn_projects_project,,1,0,0,0
+job_read_all,job all,model_dn_projects_job,,1,0,0,0
+invoice_read_all,invoice all,model_dn_projects_invoice,,1,0,0,0
