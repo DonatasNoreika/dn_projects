@@ -35,6 +35,7 @@
         'views/inherited_hr_employee_view.xml',
         'views/emp_wizard_view.xml',
         'reports/project_report.xml',
+        'reports/invoice_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
