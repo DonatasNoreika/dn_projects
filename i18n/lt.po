@@ -1,0 +1,368 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dn_projects
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-26 09:21+0000\n"
+"PO-Revision-Date: 2021-04-26 12:46+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: lt\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    End date:"
+msgstr ""
+"<br/>\n"
+"                                    Pabaigos data:"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    Start date:"
+msgstr ""
+"<br/>\n"
+"                                    Pradžios data:"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    Team Lead:"
+msgstr ""
+"<br/>\n"
+"                                    Komandos vadovas:"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    duration:"
+msgstr ""
+"<br/>\n"
+"                                    trukmė:"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__active
+msgid "Active"
+msgstr "Aktyvus"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Add"
+msgstr "Pridėti"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.launch_emp_wizard
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Add Employees"
+msgstr "Pridėti darbuotojus"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__client_id
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Client"
+msgstr "Klientas"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid "Client:"
+msgstr "Klientas:"
+
+#. module: dn_projects
+#: model:ir.ui.menu,name:dn_projects.dn_configuration_menu
+msgid "Configuration"
+msgstr "Nustatymai"
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_res_partner
+msgid "Contact"
+msgstr "Kontaktai"
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.invoices_list_action
+msgid "Create the first invoice"
+msgstr "Sukurti pirmą darbą"
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.jobs_list_action
+msgid "Create the first job"
+msgstr "Sukurti pirmą darbą"
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.project_list_action
+msgid "Create the first project"
+msgstr "Sukurti pirmą projektą"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__create_uid
+msgid "Created by"
+msgstr "Sukurė"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__create_date
+msgid "Created on"
+msgstr "Sukurta"
+
+#. module: dn_projects
+#: model:ir.ui.menu,name:dn_projects.main_dn_projects_menu
+msgid "DN Projects"
+msgstr "DN Projektai"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__description
+msgid "Description"
+msgstr "Aprašymas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Rodomas pavadinimas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__duration
+msgid "Duration (days)"
+msgstr "Trukmė (dienomis)"
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_hr_employee
+msgid "Employee"
+msgstr "Darbuotojas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__emp_qty
+msgid "Employee count"
+msgstr "Darbuotojų kiekis"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__emp_percent
+msgid "Employee percent"
+msgstr "Darbuotojų procentas"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.dn_employees_list_action
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__employee_ids
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__employees_ids
+#: model:ir.ui.menu,name:dn_projects.dn_employees_action_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Employees"
+msgstr "Darbuotojai"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_graph_view
+msgid "Employees by Projects"
+msgstr "Darbuotojai pagal projektus"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__end_date
+msgid "End Date"
+msgstr "Pabaigos data"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Group By"
+msgstr "Grupuoti pagal"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__id
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__id
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Innactive"
+msgstr "Neaktyvus"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_form_view
+msgid "Invoice Form"
+msgstr "Sąskaitos forma"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_tree_view
+msgid "Invoice Tree"
+msgstr "Sąskaitų sąrašas"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.invoices_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_invoice
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__invoice_ids
+#: model:ir.ui.menu,name:dn_projects.invoices_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Invoices"
+msgstr "Sąskaitos"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_jobs_form_view
+msgid "Job Form"
+msgstr "Darbo forma"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_jobs_tree_view
+msgid "Job Tree"
+msgstr "Darbų sąrašas"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.jobs_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_job
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__jobs_ids
+#: model:ir.ui.menu,name:dn_projects.jobs_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Jobs"
+msgstr "Darbai"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Paskutinį kartą keista"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__write_uid
+msgid "Last Updated by"
+msgstr "Paskutinį kartą atnaujino"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__write_date
+msgid "Last Updated on"
+msgstr "Paskutinį kartą atnaujinta"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__leader
+msgid "Leader"
+msgstr "Vadovas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__max_employees
+msgid "Max Employees"
+msgstr "Maksimalus darbuotojų kiekis"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.partners_list_action
+#: model:ir.ui.menu,name:dn_projects.dn_partner_action_menu
+msgid "Partners"
+msgstr "Klientai"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__project_id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__project_id
+msgid "Project"
+msgstr "Projektas"
+
+#. module: dn_projects
+#: model:res.groups,name:dn_projects.group_manager
+msgid "Project / Manager"
+msgstr "Projektas / vadybininkas"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_calendar_view
+msgid "Project Calendar"
+msgstr "Projektų kalendorius"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Project Form"
+msgstr "Projekto forma"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_tree_view
+msgid "Project Tree"
+msgstr "Projektų sąrašas"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid "Project name:"
+msgstr "Projekto pavadinimas:"
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.project_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_project
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_res_users__project_ids
+#: model:ir.ui.menu,name:dn_projects.courses_menu
+#: model:ir.ui.menu,name:dn_projects.dn_projects_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_partner_form_view
+#: model_terms:ir.ui.view,arch_db:dn_projects.employee_instructor_form_view
+msgid "Projects"
+msgstr "Projektai"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__start_date
+msgid "Start Date"
+msgstr "Pradžios data"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Team Lead"
+msgstr "Vadovas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__leader_id
+msgid "Team Leader"
+msgstr "Vadovas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__name
+msgid "Title"
+msgstr "Pavadinimas"
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__total
+msgid "Total"
+msgstr "Suma"
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_dn_projects_emp_wizard
+msgid "Wizard: Quick Add of Employees to Projects"
+msgstr "Vedlys: greitas darbuotojų priskyrimas projektams"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "or"
+msgstr "arba"

@@ -1,0 +1,358 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dn_projects
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-26 09:19+0000\n"
+"PO-Revision-Date: 2021-04-26 09:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    End date:"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    Start date:"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    Team Lead:"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                                    duration:"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__active
+msgid "Active"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Add"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.launch_emp_wizard
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Add Employees"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__client_id
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Client"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid "Client:"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.ui.menu,name:dn_projects.dn_configuration_menu
+msgid "Configuration"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.invoices_list_action
+msgid "Create the first invoice"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.jobs_list_action
+msgid "Create the first job"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.actions.act_window,help:dn_projects.project_list_action
+msgid "Create the first project"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__create_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__create_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.ui.menu,name:dn_projects.main_dn_projects_menu
+msgid "DN Projects"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__description
+msgid "Description"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__duration
+msgid "Duration (days)"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__emp_qty
+msgid "Employee count"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__emp_percent
+msgid "Employee percent"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.dn_employees_list_action
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__employee_ids
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__employees_ids
+#: model:ir.ui.menu,name:dn_projects.dn_employees_action_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Employees"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_graph_view
+msgid "Employees by Projects"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__id
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__id
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Innactive"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_form_view
+msgid "Invoice Form"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_tree_view
+msgid "Invoice Tree"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.invoices_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_invoice
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__invoice_ids
+#: model:ir.ui.menu,name:dn_projects.invoices_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Invoices"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_jobs_form_view
+msgid "Job Form"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_jobs_tree_view
+msgid "Job Tree"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.jobs_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_job
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__jobs_ids
+#: model:ir.ui.menu,name:dn_projects.jobs_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Jobs"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__write_uid
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__write_date
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__leader
+msgid "Leader"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__max_employees
+msgid "Max Employees"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.partners_list_action
+#: model:ir.ui.menu,name:dn_projects.dn_partner_action_menu
+msgid "Partners"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__project_id
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__project_id
+msgid "Project"
+msgstr ""
+
+#. module: dn_projects
+#: model:res.groups,name:dn_projects.group_manager
+msgid "Project / Manager"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_calendar_view
+msgid "Project Calendar"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_form_view
+msgid "Project Form"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_tree_view
+msgid "Project Tree"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.view_openacad_session_kanban
+msgid "Project name:"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.actions.act_window,name:dn_projects.project_list_action
+#: model:ir.model,name:dn_projects.model_dn_projects_project
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_emp_wizard__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_hr_employee__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_res_partner__project_ids
+#: model:ir.model.fields,field_description:dn_projects.field_res_users__project_ids
+#: model:ir.ui.menu,name:dn_projects.courses_menu
+#: model:ir.ui.menu,name:dn_projects.dn_projects_menu
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_partner_form_view
+#: model_terms:ir.ui.view,arch_db:dn_projects.employee_instructor_form_view
+msgid "Projects"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
+msgid "Team Lead"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__leader_id
+msgid "Team Leader"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_job__name
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__name
+msgid "Title"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model.fields,field_description:dn_projects.field_dn_projects_invoice__total
+msgid "Total"
+msgstr ""
+
+#. module: dn_projects
+#: model:ir.model,name:dn_projects.model_dn_projects_emp_wizard
+msgid "Wizard: Quick Add of Employees to Projects"
+msgstr ""
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
+msgid "or"
+msgstr ""
