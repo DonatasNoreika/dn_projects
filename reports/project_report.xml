@@ -1,0 +1,40 @@
+<odoo>
+    <record id="report_dn_project" model="ir.actions.report">
+            <field name="name">Project Report</field>
+            <field name="model">dn_projects.project</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">dn_projects.report_dn_project_view</field>
+            <field name="report_file">dn_projects.report_dn_project</field>
+            <field name="binding_model_id" ref="model_dn_projects_project"/>
+            <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_dn_project_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                  <div class="page">
+                        <h2 t-field="doc.name"/>
+                        <p>From <span t-field="doc.start_date"/> to <span t-field="doc.end_date"/></p>
+                        <t t-if="doc.description">
+                            <p><strong>Description: </strong><span t-field="doc.description"/></p>
+                        </t>
+                        <t t-if="doc.client_id">
+                            <p><strong>Client: </strong><span t-field="doc.client_id.name"/></p>
+                        </t>
+                        <t t-if="doc.leader_id">
+                            <p><strong>Team Leader: </strong><span t-field="doc.leader_id.name"/></p>
+                        </t>
+                          <h3>Employees:</h3>
+                          <ul>
+                                <t t-foreach="doc.employees_ids" t-as="employee">
+                                <li><span t-field="employee.name"/></li>
+                            </t>
+                          </ul>
+                  </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
