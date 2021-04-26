@@ -1,5 +1,5 @@
 
-from odoo import models, fields, api, exceptions
+from odoo import models, fields, api, exceptions, _
 
 class Project(models.Model):
     _name = 'dn_projects.project'
@@ -47,9 +47,9 @@ class Project(models.Model):
     def _check_employees_qty(self):
         for r in self:
             if r.max_employees < 0:
-                raise exceptions.ValidationError("The number of max employees may not be negative")
+                raise exceptions.ValidationError(_("The number of max employees may not be negative"))
             if r.max_employees < len(r.employees_ids):
-                raise exceptions.ValidationError("Increase max employees or remove excess employees")
+                raise exceptions.ValidationError(_("Increase max employees or remove excess employees"))
 
     # @api.onchange('max_employees', 'employees_ids')
     # def _verify_employees_qty(self):
@@ -72,5 +72,5 @@ class Project(models.Model):
     def _check_leader_not_in_employees(self):
         for r in self:
             if r.leader_id and r.leader_id in r.employees_ids:
-                raise exceptions.ValidationError("A project leader can't be an employee")
+                raise exceptions.ValidationError(_("A project leader can't be an employee"))
 
