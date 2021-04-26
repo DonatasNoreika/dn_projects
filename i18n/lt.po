@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-26 09:49+0000\n"
-"PO-Revision-Date: 2021-04-26 12:50+0300\n"
+"POT-Creation-Date: 2021-04-26 10:19+0000\n"
+"PO-Revision-Date: 2021-04-26 13:20+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -52,6 +52,26 @@ msgid ""
 msgstr ""
 "<br/>\n"
 "                                    trukmė:"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "<strong>Client: </strong>"
+msgstr "<strong>Klientas: </strong>"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "<strong>Description: </strong>"
+msgstr "<strong>Aprašymas: </strong>"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_invoice_view
+msgid "<strong>TOTAL: </strong>"
+msgstr "<strong>BENDRA SUMA: </strong>"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "<strong>Team Leader: </strong>"
+msgstr "<strong>Vadovas: </strong>"
 
 #. module: dn_projects
 #: code:addons/dn_projects/models/project.py:0
@@ -187,9 +207,19 @@ msgid "Employees by Projects"
 msgstr "Darbuotojai pagal projektus"
 
 #. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "Employees:"
+msgstr "Darbuotojai"
+
+#. module: dn_projects
 #: model:ir.model.fields,field_description:dn_projects.field_dn_projects_project__end_date
 msgid "End Date"
 msgstr "Pabaigos data"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "From"
+msgstr "Nuo"
 
 #. module: dn_projects
 #: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
@@ -210,7 +240,9 @@ msgstr "ID"
 #: code:addons/dn_projects/models/project.py:0
 #, python-format
 msgid "Increase max employees or remove excess employees"
-msgstr "Padidinkite maksimalų darbuotojų skaičių arba pamažinkite priskirtų darbuotojų"
+msgstr ""
+"Padidinkite maksimalų darbuotojų skaičių arba pamažinkite priskirtų "
+"darbuotojų"
 
 #. module: dn_projects
 #: model_terms:ir.ui.view,arch_db:dn_projects.dn_projects_search_view
@@ -221,6 +253,11 @@ msgstr "Neaktyvus"
 #: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_form_view
 msgid "Invoice Form"
 msgstr "Sąskaitos forma"
+
+#. module: dn_projects
+#: model:ir.actions.report,name:dn_projects.report_dn_invoice
+msgid "Invoice Report"
+msgstr "Sąskaita"
 
 #. module: dn_projects
 #: model_terms:ir.ui.view,arch_db:dn_projects.dn_invoices_tree_view
@@ -319,6 +356,11 @@ msgid "Project Form"
 msgstr "Projekto forma"
 
 #. module: dn_projects
+#: model:ir.actions.report,name:dn_projects.report_dn_project
+msgid "Project Report"
+msgstr "Projektas"
+
+#. module: dn_projects
 #: model_terms:ir.ui.view,arch_db:dn_projects.dn_project_tree_view
 msgid "Project Tree"
 msgstr "Projektų sąrašas"
@@ -384,3 +426,8 @@ msgstr "Vedlys: greitas darbuotojų priskyrimas projektams"
 #: model_terms:ir.ui.view,arch_db:dn_projects.emp_wizard_form_view
 msgid "or"
 msgstr "arba"
+
+#. module: dn_projects
+#: model_terms:ir.ui.view,arch_db:dn_projects.report_dn_project_view
+msgid "to"
+msgstr "iki"
