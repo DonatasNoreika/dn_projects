@@ -94,7 +94,7 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="view_openacad_session_kanban">
+        <record model="ir.ui.view" id="view_dn_projects_kanban">
             <field name="name">dn_projects.kanban</field>
             <field name="model">dn_projects.project</field>
             <field name="arch" type="xml">

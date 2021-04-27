@@ -22,7 +22,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'hr', 'board'],
 
     # always loaded
     'data': [
@@ -36,6 +36,7 @@
         'views/emp_wizard_view.xml',
         'reports/project_report.xml',
         'reports/invoice_report.xml',
+        'views/projects_board.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
