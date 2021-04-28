@@ -22,7 +22,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr', 'board'],
+    'depends': ['base', 'hr', 'board', 'mail'],
 
     # always loaded
     'data': [
@@ -37,6 +37,7 @@
         'reports/project_report.xml',
         'reports/invoice_report.xml',
         'views/projects_board.xml',
+        'mail_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
