@@ -28,6 +28,7 @@ class Project(models.Model):
         ('cancelled', "Cancelled"),
     ], string="Progress", default='draft', translate=True)
     image = fields.Binary("Image", attachment=True)
+    document_ids = fields.One2many('dn_projects.project_document', 'project_id', string='Documents')
 
     @api.depends('employees_ids')
     def _get_employee_qty(self):
@@ -81,3 +82,11 @@ class Project(models.Model):
             if r.leader_id and r.leader_id in r.employees_ids:
                 raise exceptions.ValidationError(_("A project leader can't be an employee"))
 
+class ProjectDocument(models.Model):
+    _name = 'dn_projects.project_document'
+
+    name = fields.Char(string='Filename')
+    file = fields.Binary(string=_('File'), attachment=True)
+    comment = fields.Text(string=_('Notes'))
+
+    project_id = fields.Many2one('dn_projects.project')

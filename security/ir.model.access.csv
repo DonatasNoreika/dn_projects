@@ -3,6 +3,8 @@ project_manager,project manager,model_dn_projects_project,group_manager,1,1,1,1
 job_manager,job manager,model_dn_projects_job,group_manager,1,1,1,1
 invoice_manager,invoice manager,model_dn_projects_invoice,group_manager,1,1,1,1
 emp_wizard_manager,employee wizard manager,model_dn_projects_emp_wizard,group_manager,1,1,1,1
+project_document_manager,project document manager,model_dn_projects_project_document,group_manager,1,1,1,1
 project_read_all,project all,model_dn_projects_project,,1,0,0,0
 job_read_all,job all,model_dn_projects_job,,1,0,0,0
 invoice_read_all,invoice all,model_dn_projects_invoice,,1,0,0,0
+project_document_all,project document all,model_dn_projects_project_document,,1,0,0,0
