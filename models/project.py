@@ -21,6 +21,12 @@ class Project(models.Model):
     emp_percent = fields.Float(string="Employee percent", compute='_get_employee_percent')
     emp_qty = fields.Integer(string="Employee count", compute='_get_employee_qty', store=True)
     active = fields.Boolean(default=True)
+    status = fields.Selection([
+        ('draft', "Draft"),
+        ('started', "Started"),
+        ('done', "Done"),
+        ('cancelled', "Cancelled"),
+    ], string="Progress", default='draft', translate=True)
 
     @api.depends('employees_ids')
     def _get_employee_qty(self):

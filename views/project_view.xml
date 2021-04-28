@@ -6,6 +6,9 @@
             <field name="model">dn_projects.project</field>
             <field name="arch" type="xml">
                 <form string="Project Form">
+                    <header>
+                        <field name="status" widget="statusbar" options="{'clickable': '1'}"/>
+                    </header>
                     <sheet>
                         <group name="Main">
                             <field name="name"/>
