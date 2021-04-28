@@ -6,6 +6,9 @@
             <field name="model">dn_projects.invoice</field>
             <field name="arch" type="xml">
                 <form string="Invoice Form">
+                    <header>
+                        <field name="status" widget="statusbar" options="{'clickable': '1'}"/>
+                    </header>
                     <sheet>
                         <group>
                             <field name="name"/>
