@@ -27,6 +27,7 @@ class Project(models.Model):
         ('done', "Done"),
         ('cancelled', "Cancelled"),
     ], string="Progress", default='draft', translate=True)
+    image = fields.Binary("Image", attachment=True)
 
     @api.depends('employees_ids')
     def _get_employee_qty(self):

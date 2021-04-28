@@ -10,6 +10,7 @@
                         <field name="status" widget="statusbar" options="{'clickable': '1'}"/>
                     </header>
                     <sheet>
+                        <field name="image" widget="image"/>
                         <group name="Main">
                             <field name="name"/>
                             <field name="client_id"/>
