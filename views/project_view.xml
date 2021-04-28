@@ -136,6 +136,7 @@
                                     Team Lead:
                                     <i><field name="leader_id"/></i>
                                     <br/>
+                                    <field name="image" widget="image"/>
                                 </div>
                         </t>
                     </templates>
