@@ -82,6 +82,15 @@ class Project(models.Model):
             if r.leader_id and r.leader_id in r.employees_ids:
                 raise exceptions.ValidationError(_("A project leader can't be an employee"))
 
+    def send_project_report(self):
+        # Find the e-mail template
+        template = self.env.ref('dn_projects.dn_projects_mail_template')
+        # You can also find the e-mail template like this:
+        # template = self.env['ir.model.data'].get_object('send_mail_template_demo', 'example_email_template')
+
+        # Send out the e-mail template to the user
+        self.env['mail.template'].browse(template.id).send_mail(self.id)
+
 class ProjectDocument(models.Model):
     _name = 'dn_projects.project_document'
 
