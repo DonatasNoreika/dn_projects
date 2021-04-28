@@ -38,7 +38,7 @@
                                 string="Employees by Projects"
                                 name="%(act_projects_graph)d"
                                 height="150"
-                                width="510"/>
+                                width="410"/>
                             <action
                                 string="Projects Calendar"
                                 name="%(act_projects_calendar)d"/>
@@ -69,7 +69,7 @@
         name="DN Projects Dashboard" parent="base.menu_reporting_dashboard"
         action="dn_projects_board_session"
         sequence="1"
-        id="menu_board_dn_projects"/>
+        id="menu_board_dn_projects2"/>
 
         <menuitem
         name="DN Projects Dashboard" parent="dn_projects.dn_projects_menu"
